@@ -2,7 +2,7 @@
 
 Add `import { DragMeModule } from 'drag-me';` in App  Module
 
-####Then add it to imports
+#### Then add it to imports
     imports: [
         BrowserModule,
         DragMeModule
