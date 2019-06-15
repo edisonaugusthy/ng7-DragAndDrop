@@ -2,7 +2,7 @@
 
 Add `import { DragMeModule } from 'drag-me';` in App  Module
 
-####Then add it to imports
+#### Then add it to imports
     imports: [
         BrowserModule,
         DragMeModule
@@ -14,3 +14,6 @@ Add `import { DragMeModule } from 'drag-me';` in App  Module
     <div  dropHere (dropped)='onDrop($event)'></div>
 
 NB:`[dragdata]` is the data to carry,`(dropped)` is callback on drop
+
+
+NPM Version : `npm i drag-me `
