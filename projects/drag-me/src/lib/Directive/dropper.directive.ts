@@ -1,7 +1,6 @@
 import { Directive, OnInit, EventEmitter, Output, ElementRef } from '@angular/core';
 
 @Directive({
-  // tslint:disable-next-line:directive-selector
   selector: '[dropHere]'
 })
 export class DropperDirective implements OnInit {
@@ -23,7 +22,6 @@ export class DropperDirective implements OnInit {
       if (e.preventDefault) {
         e.preventDefault();
       }
-
       e.dataTransfer.dropEffect = 'move';
       return false;
     });

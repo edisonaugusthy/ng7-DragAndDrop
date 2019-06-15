@@ -15,7 +15,7 @@ Add `import { DragMeModule } from 'drag-me';` in App  Module
 
 ###### Add `dropHere` Directive to the Container to Drop
     <div  dropHere (dropped)='onDrop($event)'></div>
-    
+
 NB:`[dragdata]` is the data to carry,`(dropped)` is callback on drop
 #### Adding style
 
