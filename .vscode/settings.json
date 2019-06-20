@@ -1,3 +1,5 @@
 {
-    "jira-plugin.workingProject": ""
+    "jira-plugin.workingProject": "",
+    "javascript.validate.enable": false,
+    "tslint.enable": false
 }

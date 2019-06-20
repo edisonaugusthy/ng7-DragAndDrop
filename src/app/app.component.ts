@@ -10,6 +10,9 @@ export class AppComponent {
   details = [...Array(10).keys()].map(n => n + 10)
 
   onDrop(e) {
-    console.log(e);
+    console.log(`drop 2`)
+  }
+  tDrop(e) {
+    console.log(`drop 1`)
   }
 }

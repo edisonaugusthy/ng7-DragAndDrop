@@ -1,5 +1,5 @@
-<div *ngFor="let item of title" dragMe [dragdata]="item">
+<div *ngFor="let item of title" dragMe [dragdata]="item" (ondrop)="tDrop($event)">
   {{item}}
 </div>
 
-<div *ngFor="let x of details" dropHere (dropped)="onDrop($event)">{{x}}</div>
+<div *ngFor=" let x of details" dropHere (dropped)="onDrop($event)">{{x}}</div>
