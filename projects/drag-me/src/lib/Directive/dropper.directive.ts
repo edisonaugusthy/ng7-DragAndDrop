@@ -34,7 +34,7 @@ export class DropperDirective implements OnInit {
 
       el.classList.remove('over');
       const data = JSON.parse(e.dataTransfer.getData('text'));
-      this.dropped.emit(data);
+      this.dropped && (this.dropped.emit(data))
       return false;
     });
   }

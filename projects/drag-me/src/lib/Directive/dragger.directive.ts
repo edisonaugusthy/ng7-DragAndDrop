@@ -4,7 +4,7 @@ import { Directive, Input, ElementRef, OnInit, Output, EventEmitter } from '@ang
   selector: '[dragMe]'
 })
 export class DraggerDirective implements OnInit {
-  @Input() dragdata: any;
+  @Input() dragdata: any = {};
   @Output() ondrop: EventEmitter<any> = new EventEmitter();
 
   constructor(private elementRef: ElementRef) { }
@@ -22,7 +22,7 @@ export class DraggerDirective implements OnInit {
     // Remove the drag-src class
     el.addEventListener('dragend', (e) => {
       e.preventDefault();
-      this.ondrop.emit(this.dragdata);
+      this.ondrop && (this.ondrop.emit(this.dragdata))
       el.classList.remove('drag-src')
     });
 

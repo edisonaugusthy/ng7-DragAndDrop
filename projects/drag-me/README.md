@@ -1,6 +1,15 @@
-# How to use
+# drag-me
+ `drag-me` is a custom drag and drop module for angular applications provideing features like
+ - darg and drop any where in the dom
+ - custom callbacks for each event
+ - able to carry data in drag element
+ - custom styling
 
-Add `import { DragMeModule } from 'drag-me';` in App  Module
+## How to use
+
+- add to project using `npm i drag-me --save`
+
+- Add `import { DragMeModule } from 'drag-me';` in App  Module
 
 #### Then add it to imports
     imports: [
@@ -26,6 +35,3 @@ NB:`(dropped)` is callback on drop
 1. On Dragging `drag-src` class is added to the dragging element and we can customize our own style
 2. `over` class is added to the target element when drag over the item
 
-
-
-Install using npm : `npm i drag-me --save `
