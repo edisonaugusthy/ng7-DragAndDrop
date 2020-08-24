@@ -13,7 +13,6 @@
     "tag": "v1-latest",
     "registry": "https://npm.pkg.github.com/"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.1",
     "@angular/common": "~8.0.1",
