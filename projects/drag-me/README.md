@@ -35,3 +35,4 @@ NB:`(dropped)` is callback on drop
 1. On Dragging `drag-src` class is added to the dragging element and we can customize our own style
 2. `over` class is added to the target element when drag over the item
 
+![NPM publish CD workflow](https://github.com/edisonaugusthy/ng7-DragAndDrop/workflows/NPM%20publish%20CD%20workflow/badge.svg)
