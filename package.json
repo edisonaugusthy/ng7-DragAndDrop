@@ -12,6 +12,9 @@
     "npm_pack": "cd dist/drag-me && npm pack",
     "package": "npm run build_lib && npm run npm_pack"
   },
+  "publishConfig": {
+    "tag": "v1-latest"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.1",

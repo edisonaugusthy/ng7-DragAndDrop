@@ -1,6 +1,6 @@
 {
   "name": "drag-me",
-  "version": "0.0.4",
+  "version": "1.1.5",
   "description": "Drag and drop using angular",
   "keywords": [
     "Angular",
@@ -16,5 +16,8 @@
   "peerDependencies": {
     "@angular/common": "^8.0.1",
     "@angular/core": "^8.0.1"
+  },
+  "publishConfig": {
+    "tag": "v1-latest"
   }
 }
