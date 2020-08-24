@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "build_lib": "ng build DragMe",
     "npm_pack": "cd dist/drag-me && npm pack",
-    "package": "npm run build_lib && npm run npm_pack"
+    "package": "npm run build_lib && npm run npm_pack",
+    "run": "npm publish --tag ${{ github.event.release.target_commitish}}"
   },
   "publishConfig": {
     "tag": "v1-latest"
