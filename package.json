@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build_lib": "ng build DragMe",
+    "prebuild": "npm --no-git-tag-version version patch",
+    "publish": "npm run package && cd dist/drag-me && npm publish",
+    "build_lib": "ng build drag-me --prod",
     "npm_pack": "cd dist/drag-me && npm pack",
-    "package": "npm run build_lib && npm run npm_pack",
-    "build": " npm run build_lib && npm run npm_pack"
+    "package": "npm run build_lib && npm run npm_pack"
   },
   "publishConfig": {
     "tag": "v1-latest",
