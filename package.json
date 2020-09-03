@@ -4,15 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "prebuild": "npm --no-git-tag-version version patch",
     "publish": "npm run package && cd dist/drag-me && npm publish",
-    "build_lib": "ng build drag-me --prod",
+    "build_lib": "ng build DragMe --prod",
     "npm_pack": "cd dist/drag-me && npm pack",
     "package": "npm run build_lib && npm run npm_pack"
-  },
-  "publishConfig": {
-    "tag": "v1-latest",
-    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "@angular/animations": "~10.1.0",
