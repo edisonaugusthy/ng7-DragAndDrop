@@ -8,16 +8,12 @@ export class DropperDirective implements OnInit {
   constructor(private elementRef: ElementRef) { }
   ngOnInit() {
     const el = this.elementRef.nativeElement;
-
-
     el.addEventListener('dragenter', (e) => {
       el.classList.add('over');
     });
-
     el.addEventListener('dragleave', (e) => {
       el.classList.remove('over');
     });
-
     el.addEventListener('dragover', (e) => {
       if (e.preventDefault) {
         e.preventDefault();
@@ -25,13 +21,10 @@ export class DropperDirective implements OnInit {
       e.dataTransfer.dropEffect = 'move';
       return false;
     });
-
-
     el.addEventListener('drop', (e) => {
       if (e.stopPropagation) {
         e.stopPropagation();
       }
-
       el.classList.remove('over');
       const data = JSON.parse(e.dataTransfer.getData('text'));
       this.dropped && (this.dropped.emit(data))
