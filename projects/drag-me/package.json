@@ -20,5 +20,8 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "tag": "v1-latest"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
   }
 }
