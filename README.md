@@ -1,4 +1,7 @@
-# drag-me ![NPM Publish](https://github.com/edisonaugusthy/ng7-DragAndDrop/workflows/NPM%20Publish/badge.svg) ![Node.js CI](https://github.com/edisonaugusthy/ng7-DragAndDrop/workflows/Node.js%20CI/badge.svg)
+# drag-me
+
+![NPM Publish](https://github.com/edisonaugusthy/ng7-DragAndDrop/workflows/NPM%20Publish/badge.svg)
+![Node.js CI](https://github.com/edisonaugusthy/ng7-DragAndDrop/workflows/Node.js%20CI/badge.svg)
 A a custom drag and drop module for angular.
 
  #### Features
