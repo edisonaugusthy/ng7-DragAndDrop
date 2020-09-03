@@ -6,7 +6,7 @@ import { Directive, Input, ElementRef, OnInit, Output, EventEmitter } from '@ang
 export class DraggerDirective implements OnInit {
   @Input() dragdata: any = {};
   @Output() ondrop: EventEmitter<any> = new EventEmitter();
-
+  @Output() dragStart: EventEmitter<any> = new EventEmitter();
   constructor(private elementRef: ElementRef) { }
 
   ngOnInit() {
@@ -17,6 +17,7 @@ export class DraggerDirective implements OnInit {
       el.classList.add('drag-src');
       e.dataTransfer.effectAllowed = 'move';
       e.dataTransfer.setData('text', JSON.stringify(this.dragdata));
+      this.dragStart && (this.dragStart.emit(this.dragdata))
     });
 
     // Remove the drag-src class
