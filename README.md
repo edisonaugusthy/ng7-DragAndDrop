@@ -1,52 +1,53 @@
-# drag-me
+A a custom drag and drop library for angular.
 
-![NPM Publish](https://github.com/edisonaugusthy/ng7-DragAndDrop/workflows/NPM%20Publish/badge.svg)
-![Node.js CI](https://github.com/edisonaugusthy/ng7-DragAndDrop/workflows/Node.js%20CI/badge.svg)
+#### Features
 
-
-A a custom drag and drop module for angular.
-
- #### Features
-
- - darg and drop any where in the dom
- - custom callbacks for `drag-start`, `drag-end`, `drop` events
- - Pass data in Dragging element
- - custom styling
+- darg and drop any where in the DOM Tree
+- support callback for `drag-start`, `drag-end`, `drop` events
+- Pass data in while draging element
+- support for custom styling
 
 ![grab-landing-page](https://github.com/edisonaugusthy/ng7-DragAndDrop/blob/master/tes.gif)
 
 Angular compatibility
-| Angular Version                  | package version |
+| Angular Version | package version |
 | -------------------------------- | :-------------: |
-| angular 8 and below              | 1.1.5 and below |
-| angular 9 and above(ivy version) | 1.1.6 and above |
+| angular 8 and below | 1.1.5 and below |
+| angular 10 and below| 1.1.6 and above |
+| angular 10+ | 1.1.7 and above |
 
 ## Usage steps
 
- - Run `npm i drag-me --save` in command prompt from root of your project folder
- - Add import to App Module like this `import { DragMeModule } from 'drag-me';`
- - Add to imports array in app module
+- Run `npm i drag-me --save` from root of your project folder
+- import `DragMeModule` to App Module
 
-    ```js
-    imports: [
-        BrowserModule,
-        StorageModule
-        ],
-    ```
+```js
+import { DragMeModule } from "drag-me";
+```
+
+- Add to imports array in app module
+
+  ```js
+  imports: [
+      DragMeModule
+      ],
+  ```
+
 - Add `dragMe` Directive to the element to drag
 
-    ```html
-    <div dragMe [dragdata]="item" (ondrop)="onDrop($event)"></div>
-    ```
-    >NB:`[dragdata]` is the data to carry,`(ondrop)` is callback on drop
+  ```html
+  <div dragMe [dragdata]="item" (ondrop)="onDrop($event)"></div>
+  ```
+
+  > NB:`[dragdata]` is the data to carry,`(ondrop)` is callback on drop
 
 - Add `dropHere` Directive to the Container to Drop
 
-    ```html
-    <div  dropHere (dropped)='onDrop($event)'></div>
-    ```
+  ```html
+  <div dropHere (dropped)="onDrop($event)"></div>
+  ```
 
-    >NB:`(dropped)` is callback on drop
+  > NB:`(dropped)` is callback on drop
 
 #### Adding style
 
@@ -55,9 +56,9 @@ Angular compatibility
 
 #### All Available methods
 
- - `dragStart()`
- - `dropped()`
- - `ondrop()`
+- `dragStart()`
+- `dropped()`
+- `ondrop()`
 
 ## Browsers support
 
@@ -65,10 +66,9 @@ Angular compatibility
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | IE11, Edge                                                                                                                                                                                                      | last 8 versions                                                                                                                                                                                                   | last 8 versions                                                                                                                                                                                               | last 5 versions                                                                                                                                                                                                   |
 
-
 ## Built with 🔧
 
-* Angular
+- Angular
 
 ## Developing 👷
 
@@ -82,10 +82,5 @@ Angular compatibility
 <table>
   <tr>
     <td align="center"><a href="https://github.com/edisonaugusthy"><img src="https://github.com/edisonaugusthy.png?size=100" width="100px;" alt="Edison"/><br /><sub><b>Edison Augusthy</b></sub></a><br /><a href="https://github.com/edisonaugusthy/ng7-DragAndDrop/commits?author=edisonaugusthy" title="Edison">💻</a></td>
-
   </tr>
-
 </table>
-
-
-
