@@ -1,6 +1,6 @@
 {
   "name": "drag-me",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": " Custom Drag and drop using angular",
   "keywords": [
     "Angular drag and drop",
@@ -14,10 +14,10 @@
     "url": "https://github.com/edisonaugusthy/ng7-DragAndDrop"
   },
   "peerDependencies": {
-    "@angular/common": "~10.0.14",
-    "@angular/core": "~10.0.14"
+    "@angular/common": "^16.2.12",
+    "@angular/core": "^16.2.12"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+     "tslib": "^2.6.2"
   }
 }

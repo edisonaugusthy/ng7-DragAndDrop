@@ -1,47 +1,51 @@
 # drag-me
+
 A a custom drag and drop module for angular.
 
- #### Features
+#### Features
 
- - darg and drop any where in the dom
- - custom callbacks for `drag-start`, `drag-end`, `drop` events
- - Pass data in Dragging element
- - custom styling
+- darg and drop any where in the dom
+- custom callbacks for `drag-start`, `drag-end`, `drop` events
+- Pass data in Dragging element
+- custom styling
 
 ![grab-landing-page](https://github.com/edisonaugusthy/ng7-DragAndDrop/blob/master/tes.gif)
 
 Angular compatibility
-| Angular Version                  | package version |
+| Angular Version | package version |
 | -------------------------------- | :-------------: |
-| angular 8 and below              | 1.1.5 and below |
+| angular 8 and below | 1.1.5 and below |
 | angular 9 and above(ivy version) | 1.1.6 and above |
+| angular 10+ | 1.1.7 |
 
 ## Usage steps
 
- - Run `npm i drag-me --save` in command prompt from root of your project folder
- - Add import to App Module like this `import { DragMeModule } from 'drag-me';`
- - Add to imports array in app module
+- Run `npm i drag-me --save` in command prompt from root of your project folder
+- Add import to App Module like this `import { DragMeModule } from 'drag-me';`
+- Add to imports array in app module
 
-    ```js
-    imports: [
-        BrowserModule,
-        StorageModule
-        ],
-    ```
+  ```js
+  imports: [
+      BrowserModule,
+      StorageModule
+      ],
+  ```
+
 - Add `dragMe` Directive to the element to drag
 
-    ```html
-    <div dragMe [dragdata]="item" (ondrop)="onDrop($event)"></div>
-    ```
-    >NB:`[dragdata]` is the data to carry,`(ondrop)` is callback on drop
+  ```html
+  <div dragMe [dragdata]="item" (ondrop)="onDrop($event)"></div>
+  ```
+
+  > NB:`[dragdata]` is the data to carry,`(ondrop)` is callback on drop
 
 - Add `dropHere` Directive to the Container to Drop
 
-    ```html
-    <div  dropHere (dropped)='onDrop($event)'></div>
-    ```
+  ```html
+  <div dropHere (dropped)="onDrop($event)"></div>
+  ```
 
-    >NB:`(dropped)` is callback on drop
+  > NB:`(dropped)` is callback on drop
 
 #### Adding style
 
@@ -50,9 +54,9 @@ Angular compatibility
 
 #### All Available methods
 
- - `dragStart()`
- - `dropped()`
- - `ondrop()`
+- `dragStart()`
+- `dropped()`
+- `ondrop()`
 
 ## Browsers support
 
@@ -60,10 +64,9 @@ Angular compatibility
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | IE11, Edge                                                                                                                                                                                                      | last 8 versions                                                                                                                                                                                                   | last 8 versions                                                                                                                                                                                               | last 5 versions                                                                                                                                                                                                   |
 
-
 ## Built with 🔧
 
-* Angular
+- Angular
 
 ## Developing 👷
 
@@ -81,6 +84,3 @@ Angular compatibility
   </tr>
 
 </table>
-
-
-
