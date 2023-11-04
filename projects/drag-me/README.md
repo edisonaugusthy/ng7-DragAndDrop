@@ -1,13 +1,11 @@
-# drag-me
-
-A a custom drag and drop module for angular.
+A a custom drag and drop library for angular.
 
 #### Features
 
-- darg and drop any where in the dom
-- custom callbacks for `drag-start`, `drag-end`, `drop` events
-- Pass data in Dragging element
-- custom styling
+- darg and drop any where in the DOM Tree
+- support callback for `drag-start`, `drag-end`, `drop` events
+- Pass data in while draging element
+- support for custom styling
 
 ![grab-landing-page](https://github.com/edisonaugusthy/ng7-DragAndDrop/blob/master/tes.gif)
 
@@ -15,19 +13,23 @@ Angular compatibility
 | Angular Version | package version |
 | -------------------------------- | :-------------: |
 | angular 8 and below | 1.1.5 and below |
-| angular 9 and above(ivy version) | 1.1.6 and above |
-| angular 10+ | 1.1.7 |
+| angular 10 and below| 1.1.6 and above |
+| angular 10+ | 1.1.7 and above |
 
 ## Usage steps
 
-- Run `npm i drag-me --save` in command prompt from root of your project folder
-- Add import to App Module like this `import { DragMeModule } from 'drag-me';`
+- Run `npm i drag-me --save` from root of your project folder
+- import `DragMeModule` to App Module
+
+```js
+import { DragMeModule } from "drag-me";
+```
+
 - Add to imports array in app module
 
   ```js
   imports: [
-      BrowserModule,
-      StorageModule
+      DragMeModule
       ],
   ```
 
@@ -80,7 +82,5 @@ Angular compatibility
 <table>
   <tr>
     <td align="center"><a href="https://github.com/edisonaugusthy"><img src="https://github.com/edisonaugusthy.png?size=100" width="100px;" alt="Edison"/><br /><sub><b>Edison Augusthy</b></sub></a><br /><a href="https://github.com/edisonaugusthy/ng7-DragAndDrop/commits?author=edisonaugusthy" title="Edison">💻</a></td>
-
   </tr>
-
 </table>
