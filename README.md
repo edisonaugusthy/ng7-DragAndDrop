@@ -1,6 +1,6 @@
-this module provides you with a way to easily create drag-and-drop interfaces, with support for free dragging, sorting within a list, transferring items between lists, animations.
+`drag-me` module provides you with a way to easily create drag-and-drop interfaces, with support for free dragging, sorting within a list, transferring items between lists, animations.
 
-Start by importing DragMeModule into the NgModule where you want to use drag-and-drop features. You can now add the dragMe directive to elements to make them draggable.draggable elements can be freely moved around the page. You can add dropHere directive to elements constrain where it may be dropped.
+Start by importing `DragMeModule` into the `NgModule` where you want to use drag-and-drop features. You can now add the `dragMe` directive to elements to make them draggable.draggable elements can be freely moved around the page. You can add `dropHere` directive to elements constrain where it may be dropped.
 
 #### Features
 
@@ -61,12 +61,6 @@ import { DragMeModule } from "drag-me";
 - `dragStart()`
 - `dropped()`
 - `ondrop()`
-
-## Browsers support
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/vivaldi/vivaldi_48x48.png" alt="Vivaldi" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Vivaldi |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| IE11, Edge                                                                                                                                                                                                      | last 8 versions                                                                                                                                                                                                   | last 8 versions                                                                                                                                                                                               | last 5 versions                                                                                                                                                                                                   |
 
 ## Built with 🔧
 
