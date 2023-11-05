@@ -1,5 +1,23 @@
-<div *ngFor="let item of title" dragMe [dragdata]="item" (ondrop)="tDrop($event)">
-  {{item}}
+<div class="container">
+  <div class="item1">
+    <div
+      *ngFor="let item of array1"
+      dragMe
+      [dragdata]="item"
+      (ondrop)="tDrop($event)"
+      class="item"
+    >
+      {{ item }}
+    </div>
+  </div>
+  <div class="item2">
+    <div
+      *ngFor="let x of array2"
+      dropHere
+      (dropped)="onDrop($event)"
+      class="item"
+    >
+      {{ x }}
+    </div>
+  </div>
 </div>
-
-<div *ngFor=" let x of details" dropHere (dropped)="onDrop($event)">{{x}}</div>
