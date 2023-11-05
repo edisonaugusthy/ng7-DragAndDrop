@@ -1,13 +1,14 @@
 {
   "name": "drag-me",
-  "version": "1.1.7",
-  "description": " Custom Drag and drop using angular",
+  "version": "1.1.8",
+  "description": "drag and drop module for angular",
   "keywords": [
-    "Angular drag and drop",
-    "Library",
-    "Drag",
-    "Drop",
-    "Drag and drop"
+    "angular drag and drop",
+    "drag",
+    "drop",
+    "drag and drop",
+    "ng drag and drop",
+    "ng drag"
   ],
   "repository": {
     "type": "git",
