@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DragMeModule } from 'drag-me';
 
 import { AppComponent } from './app.component';
-import { DragMeModule } from 'drag-me';
 
 @NgModule({
   declarations: [
