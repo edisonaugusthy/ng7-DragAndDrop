@@ -1,4 +1,6 @@
-A a custom drag and drop library for angular.
+this module provides you with a way to easily create drag-and-drop interfaces, with support for free dragging, sorting within a list, transferring items between lists, animations.
+
+Start by importing DragMeModule into the NgModule where you want to use drag-and-drop features. You can now add the dragMe directive to elements to make them draggable.draggable elements can be freely moved around the page. You can add dropHere directive to elements constrain where it may be dropped.
 
 #### Features
 
